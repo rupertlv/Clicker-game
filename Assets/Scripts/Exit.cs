@@ -8,6 +8,6 @@ public class Exit : MonoBehaviour {
 	public void MainMenuExitClick(){
         textBox.SetActive(false);
 
-		Application.Quit(); 
+		Application.Quit();
 	}
 }
