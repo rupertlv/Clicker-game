@@ -9,6 +9,10 @@ public class MainMenuOpt : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
 
     // Update is called once per frame
     public void Load()

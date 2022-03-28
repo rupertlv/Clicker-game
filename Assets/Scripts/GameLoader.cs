@@ -22,7 +22,7 @@ public class GameLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(MainMenuOpt.isLoading==true){
+        if(MainMenuOpt.isLoading==true && GlobalUpgrades.upgrade6Count < 1){
 
             savedMilk = PlayerPrefs.GetFloat("SavedMilk");
             GlobalMilk.milkCount = savedMilk;

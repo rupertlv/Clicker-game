@@ -4,9 +4,11 @@ ScriptsOnlyBuild:
     - AddMilk
     - AutomaticMilking
     - BuyUpgrade
+    - GameLoader
     - GlobalMilk
     - GlobalUpgrades
     - MainMenuOpt
+    - SaveGame
     - SplashToMenu
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -56,21 +58,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1478}
+      Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 2016}
+      Script: {instanceID: 2080}
     - Class: 114
-      Script: {instanceID: 2162}
+      Script: {instanceID: 2226}
     - Class: 114
-      Script: {instanceID: 2328}
+      Script: {instanceID: 2392}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2686}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2874}
     - Class: 114
-      Script: {instanceID: 2896}
+      Script: {instanceID: 2962}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -111,29 +113,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1478}
+      Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 2016}
+      Script: {instanceID: 1816}
     - Class: 114
-      Script: {instanceID: 2328}
+      Script: {instanceID: 1926}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 2080}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2226}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2392}
     - Class: 114
-      Script: {instanceID: 2896}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 3060}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 20534}
+      Script: {instanceID: 2686}
     - Class: 114
-      Script: {instanceID: 20540}
+      Script: {instanceID: 2874}
     - Class: 114
-      Script: {instanceID: 25818}
+      Script: {instanceID: 2962}
     - Class: 114
-      Script: {instanceID: 26880}
+      Script: {instanceID: 3046}
+    - Class: 114
+      Script: {instanceID: 3128}
+    - Class: 114
+      Script: {instanceID: 3982}
+    - Class: 114
+      Script: {instanceID: 4682}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -161,31 +169,41 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 86
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2144}
+      Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 2328}
+      Script: {instanceID: 2208}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 2392}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2686}
     - Class: 114
-      Script: {instanceID: 4130}
+      Script: {instanceID: 2874}
+    - Class: 114
+      Script: {instanceID: 4198}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -254,6 +272,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 2be7b43163bd022ccc5c0b64f0f7fb51
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 8af06f30590c6aa807a8e4fa46d9e524
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AddMilk
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -332,6 +362,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BuyUpgrade
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -416,6 +452,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 4f4dabb56a42b637a1f3aadf9509de57
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AutomaticMilking
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -580,6 +622,12 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: a9aba933c0b2e6bfda720ef9cbc2b014
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SaveGame
+  - hash:
+      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -632,27 +680,9 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GlobalUpgrades
-  - hash:
-      serializedVersion: 2
-      Hash: 4f4dabb56a42b637a1f3aadf9509de57
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AutomaticMilking
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BuyUpgrade
-  - hash:
-      serializedVersion: 2
-      Hash: 8af06f30590c6aa807a8e4fa46d9e524
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AddMilk
   platform: 13
   scenePathNames:
   - Assets/Splash.unity
   - Assets/MainMenu.unity
   - Assets/MainScene.unity
-  playerPath: C:/Users/night/OneDrive/Desktop/MilkClicker.apk
+  playerPath: C:/Users/rob4i/Desktop/MilkClicker.apk

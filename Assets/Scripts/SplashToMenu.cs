@@ -13,7 +13,7 @@
  
      IEnumerator LoadLevelAfterDelay()
      {
-         yield return new WaitForSeconds(3);
+         yield return new WaitForSeconds(4);
          SceneManager.LoadScene(1);
      }
  }
