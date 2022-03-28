@@ -22,7 +22,7 @@ public class GameLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(MainMenuOpt.isLoading==true && GlobalUpgrades.upgrade6Count < 1){
+        if(MainMenuOpt.isLoading==true){
 
             savedMilk = PlayerPrefs.GetFloat("SavedMilk");
             GlobalMilk.milkCount = savedMilk;
@@ -63,6 +63,23 @@ public class GameLoader : MonoBehaviour
 
             savedCursorCost = PlayerPrefs.GetFloat("SavedCursorCost");
             GlobalUpgrades.Internalcost6 = savedCursorCost;
+            MainMenuOpt.isLoading= false;
+
+        }else{
+            GlobalMilk.milkCount = 0;
+            GlobalUpgrades.upgrade1Count=0;
+            GlobalUpgrades.upgrade2Count=0;
+            GlobalUpgrades.upgrade3Count=0;
+            GlobalUpgrades.upgrade4Count=0;
+            GlobalUpgrades.upgrade5Count=0;
+            GlobalUpgrades.upgrade6Count=1;
+
+            GlobalUpgrades.Internalcost1=10;
+            GlobalUpgrades.Internalcost2=200;
+            GlobalUpgrades.Internalcost3=500;
+            GlobalUpgrades.Internalcost4=1250;
+            GlobalUpgrades.Internalcost5=5000;
+            GlobalUpgrades.Internalcost6=1;
 
         }
     }
